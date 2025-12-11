@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AsanSka University College of Design and Technology</title>
+    <meta name="description" content="AUCDT is a Private University College in Accra pioneering innovative and progressive programmes in higher education." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              aucdt: {
+                maroon: '#630f12',
+                gold: '#ffcb05',
+                green: '#3db54a',
+                beige: '#f5f5dc',
+              }
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for carousel */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+
+      /* Custom scrollbar for chat */
+      .scrollbar-thin::-webkit-scrollbar {
+        width: 6px;
+      }
+      .scrollbar-thin::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .scrollbar-thin::-webkit-scrollbar-thumb {
+        background-color: #e5e7eb;
+        border-radius: 20px;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translate3d(0, 40px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translate3d(0, -40px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      @keyframes scaleUp {
+        from {
+          opacity: 0;
+          transform: scale(0.95) translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1) translateY(0);
+        }
+      }
+
+      .animate-fade-in-up {
+        animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+      }
+
+      .animate-fade-in-down {
+        animation: fadeInDown 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+      }
+
+      .animate-scale-up {
+        animation: scaleUp 0.3s ease-out forwards;
+      }
+      
+      .animation-delay-200 {
+        animation-delay: 200ms;
+      }
+      
+      .animation-delay-400 {
+        animation-delay: 400ms;
+      }
+
+      .animation-delay-600 {
+        animation-delay: 600ms;
+      }
+
+      /* High Contrast Mode Overrides */
+      html.high-contrast body, 
+      html.high-contrast header,
+      html.high-contrast section,
+      html.high-contrast div,
+      html.high-contrast footer,
+      html.high-contrast button {
+        background-color: #000000 !important;
+        color: #FFFF00 !important;
+        border-color: #FFFF00 !important;
+      }
+      
+      html.high-contrast a {
+        color: #00FFFF !important;
+        text-decoration: underline !important;
+      }
+
+      html.high-contrast button {
+        border: 2px solid #FFFF00 !important;
+        background-color: #000000 !important;
+      }
+      
+      html.high-contrast button:hover, 
+      html.high-contrast a:hover {
+        background-color: #333333 !important;
+        color: #FFFFFF !important;
+      }
+
+      html.high-contrast img {
+        filter: grayscale(100%) contrast(120%);
+        border: 1px solid #FFFF00;
+      }
+
+      html.high-contrast .bg-aucdt-maroon,
+      html.high-contrast .bg-aucdt-gold,
+      html.high-contrast .text-aucdt-maroon,
+      html.high-contrast .text-aucdt-gold {
+        background-color: #000000 !important;
+        color: #FFFF00 !important;
+      }
+      
+      /* Reset for images/inputs in high contrast if needed */
+      html.high-contrast input,
+      html.high-contrast textarea {
+        background-color: #000000 !important;
+        color: #FFFFFF !important;
+        border: 2px solid #FFFFFF !important;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client?deps=react@18.3.1",
+    "react/": "https://esm.sh/react@18.3.1/",
+    "react-dom/": "https://esm.sh/react-dom@18.3.1/",
+    "lucide-react": "https://esm.sh/lucide-react@0.263.1?deps=react@18.3.1",
+    "@google/generative-ai": "https://esm.sh/@google/generative-ai@0.21.0",
+    "html2canvas": "https://esm.sh/html2canvas@1.4.1",
+    "@google/genai": "https://esm.sh/@google/genai@^1.32.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
